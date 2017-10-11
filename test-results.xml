@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.004" tests="10" failures="0" skipped="1">
+  <testsuite name="Root Suite" timestamp="2017-09-11T15:00:14" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="within demo" timestamp="2017-09-11T15:00:14" tests="10" file="/Users/diyu/workspace/codeceptjs_demo/codeceptjs-init/spec/second_test.js" failures="0" time="0.004">
+    <testcase name="within demo: Test Login | {&quot;login&quot;:&quot;davert&quot;,&quot;password&quot;:&quot;123456&quot;}" time="0.002" classname="Test Login | {&quot;login&quot;:&quot;davert&quot;,&quot;password&quot;:&quot;123456&quot;}">
+    </testcase>
+    <testcase name="within demo: Test Login | {&quot;login&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;123456&quot;}" time="0" classname="Test Login | {&quot;login&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;123456&quot;}">
+    </testcase>
+    <testcase name="within demo: test generator | [object Object]" time="0.001" classname="test generator | [object Object]">
+    </testcase>
+    <testcase name="within demo: test generator | [object Object]" time="0.001" classname="test generator | [object Object]">
+    </testcase>
+    <testcase name="within demo: test array | 1" time="0" classname="test array | 1">
+    </testcase>
+    <testcase name="within demo: test array | 2" time="0" classname="test array | 2">
+    </testcase>
+    <testcase name="within demo: test array | 3" time="0" classname="test array | 3">
+    </testcase>
+    <testcase name="within demo: test array | 1" time="0" classname="test array | 1">
+    </testcase>
+    <testcase name="within demo: test array | 2" time="0" classname="test array | 2">
+    </testcase>
+  </testsuite>
+</testsuites>

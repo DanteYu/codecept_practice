@@ -1,0 +1,27 @@
+{
+  "name": "codeceptjs-init",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "setup": "npm install --save-dev --no-spin",
+    "test": "codeceptjs run --debug --reporter mochawesome",
+    "test:smart": "codeceptjs run --grep @SmartQuote -c codecept.conf.js --steps --debug --reporter mochawesome",
+    "test:smoke": "codeceptjs run --grep @SmokeTest -c codecept.conf.js --reporter mochawesome",
+    "test:localbrowser": "codeceptjs run -c codecept.conf.js --steps --reporter mochawesome",
+    "test:browserstack": "codeceptjs run-multiple --all -c browserstack.codecept.conf.js --reporter mocha-multi"
+  },
+  "author": "YuDi",
+  "license": "ISC",
+  "dependencies": {
+    "browserstacktunnel-wrapper": "^2.0.1",
+    "codeceptjs": "^1.0.1",
+    "mocha-junit-reporter": "^1.13.0",
+    "mocha-multi": "^0.11.0",
+    "mochawesome": "^2.3.0",
+    "selenium-standalone": "^6.7.0",
+    "webdriverio": "^4.8.0"
+  },
+  "devDependencies": {
+    "wdio-screenshot": "^0.6.0"
+  }
+}

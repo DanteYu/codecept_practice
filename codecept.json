@@ -1,0 +1,46 @@
+{
+  "output": "./output",
+  "helpers": {
+    "WebDriverIO": {
+      "url": "http://simple-form-bootstrap.plataformatec.com.br",
+      "browser": "chrome"
+    },
+    "MyHelper": {
+      "require": "./helpers/custom_helpers.js",
+      "defaultHost": "http://mysite.com"
+    },
+    "Mochawesome": {
+        "uniqueScreenshotNames": "true"
+    }
+  },
+  "include": {
+    "I": "./steps_file.js",
+    "landingPage": "./pages/landingPage.js",
+    "landingPageStep": "./steps/LandingPage.js",
+    "landingPageFragment": "./fragments/LandingPage.js"
+  },
+  "mocha": {
+  "reporterOptions": {
+      "reportDir": "output",
+      "mochaFile": "output/result.xml"
+  }
+},
+  "bootstrap": "./util/bootstrapAndTeardown/selenium-standalone-start.js",
+  "teardown": "./util/bootstrapAndTeardown/selenium-standalone-stop.js",
+  "hooks": ["./util/custom_hooks/event_listener.js"],
+  "tests": "./spec/s*_test.js",
+  "timeouts": {
+    "script" : 60000,
+    "page load": 10000
+  },
+  "name": "codeceptjs-init",
+  "multiple": {
+    "smoke": {
+      "grep": "@smoke",
+      "browsers": [
+        "chrome",
+        "firefox"
+      ]
+    }
+  }
+}

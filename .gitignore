@@ -1,0 +1,4 @@
+.DS_Store
+mochawesome-report/
+node_modules/
+output/
